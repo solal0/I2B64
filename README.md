@@ -9,9 +9,10 @@ Download I2B64.py and I2B64.luau from the latest release
 
 ## Compile using Python
 
-1. Run I2B64.py and select Compile action
-2. Select your image file
-3. Save your image's data file
+1. Run I2B64.py
+2. Select the Image to Base64 action
+3. Select your image file
+4. Save your image's data file
 
 ## Decompile in Roblox
 1. Copy the content of the image's data file
