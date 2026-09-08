@@ -202,8 +202,8 @@ def main():
     print("I2B64 v1.0")
     print("https://github.com/solal0/I2B64")
     print()
-    print("1. Compile")
-    print("2. Decompile")
+    print("1. Image to Base64")
+    print("2. Base64 to Image")
     print()
 
     action = input("Action: ").strip()
