@@ -32,3 +32,6 @@ local img = Instance.new("ImageLabel",gui)
 img.Size = UDim2.fromOffset(X, Y)
 img.ImageContent = image
 ```
+
+# Important
+Do not use I2B64 for anything that violates Roblox’s Community Standards or Terms of Use. Ty
