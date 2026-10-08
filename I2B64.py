@@ -28,7 +28,13 @@ def compile():
     if not path: return
 
     image = Image.open(path).convert("RGBA")
-    width,height = image.size
+
+    if max(image.size) > 1024: # fix for error: AssetService:CreateEditableImage expects size.X and size.Y to be less than 1024
+        scale = 1024 / max(image.size)
+        new_size = (round(image.width * scale),round(image.height * scale))
+        image = image.resize(new_size, Image.Resampling.LANCZOS)
+
+    width, height = image.size
 
     if width > 65535 or height > 65535:
         raise ValueError("Image dimensions cannot exceed 65535x65535.")
